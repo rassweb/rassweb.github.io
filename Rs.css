@@ -1,1 +1,295 @@
+@import url(https://fonts.bunny.net/css?family=alexandria:200,400,700);
 
+*, *:before, *:after {
+    box-sizing: border-box
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0
+}
+
+html {
+    font-size: 16px;
+    font-family: sans-serif;
+    color: #333;
+    overflow: hidden;
+    user-select: none
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    padding: 0;
+    margin: 0;
+    font-weight: 400
+}
+
+button {
+    background-color: transparent;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center
+}
+
+ul {
+    list-style: none;
+    padding: 6px;
+    margin: 0;
+}
+
+ul li {
+    padding: 3px 6px 3px 1.6em;
+}
+
+
+html {
+    font-family: 'Alexandria', sans-serif;
+}
+header, main, footer {
+    width: 100%;
+}
+
+main {
+    height: calc(100% - 128px);
+    display: grid;
+    align-items: start;
+    grid-template-columns: 256px 1fr;
+    background-color: #fff;
+}
+
+header {
+    height: 128px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+    position: relative;
+    z-index: 1;
+    isolation: isolate
+}
+
+nav {
+    width: 100%;
+    height: 100%;
+    background-color: #f4f4f4
+}
+
+section {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    box-shadow: inset 0 0 12px 6px rgba(0,0,0,.1)
+}
+
+nav button, nav ul li a {
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #6a994e;
+    color: #fff;
+    padding: 12px;
+    line-height: 1;
+    cursor: pointer;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.25)
+}
+
+nav button:hover {
+    background-color: #386641
+}
+nav button:active {
+    background-color: #0a9396
+}
+
+nav ul {
+    margin: 0;
+    padding: 0
+}
+
+nav ul li {
+    margin: 0;
+    padding: 0
+}
+nav ul ul {
+
+}
+
+nav ul li a {
+    justify-content: left;
+    padding: 9px;
+    font-size: 90%;
+    text-decoration: none;
+    background-color: #588157
+}
+
+nav ul li a:hover {
+    background-color: #3a5a40
+}
+
+nav ul li a:active, nav ul li a.active {
+    background-color: #0a9396
+}
+
+div.content {
+    font-size: 100%;
+    line-height: 1.5;
+    color: #555;
+    padding: 24px;
+}
+
+div.content p {
+    margin: 0 6px 6px 6px;
+    padding: 12px;
+    font-size: 90%;
+    lie-height: 1.5;
+    text-align: justify;
+    text-wrap: pretty;
+}
+
+div.content a {
+    color: #1a759f;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: 0.001em;
+    text-decoration-color: transparent;
+}
+
+div.content a:hover {
+    text-decoration-color: #99d98c;
+}
+
+/* Szintaxis kiemelő kódrész */
+div.content pre {
+    padding: 0 6px;
+    margin: 0 6px 6px 6px;
+    box-sizing: border-box;
+    border-radius: 12px;
+    corder-shape: squircle;
+    border: 1px solid rgba(0,0,0,.25);
+    background-color: rgba(255,255,255,.75)
+}
+
+div.content pre code {
+    user-select: text;
+    line-height: 1.15;
+    background-color: transparent;
+}
+
+/* Fejlécszövegek */
+
+div.content h1 { font-size: 125%; }
+div.content h2 { font-size: 120%; }
+div.content h3 { font-size: 115%; }
+div.content h4 { font-size: 110%; }
+div.content h5 { font-size: 105%; }
+div.content h6 { font-size: 100%; }
+
+div.content h1,
+div.content h2,
+div.content h3,
+div.content h4,
+div.content h5,
+div.content h6 {
+    line-height: 1;
+    padding: 12px;
+    margin: 6px;
+    font-weight: 700;
+    border-width: 0;
+    border-style: solid;
+    border-color: currentColor;
+    border-left-width: 12px;
+    border-bottom-width: 1px;
+    border-bottom-style: dashed;
+}
+
+div.content h1 {
+    border-style: dashed;
+    border-left-color: #2a9d8f;
+}
+
+div.content h2 {
+    border-left-color: #e9c45a;
+}
+
+div.content h3 {
+    border-left-color: #f4a261;
+}
+
+div.content h4 {
+    border-left-color: #e76f51;
+}
+
+div.content h5, div.content h6 {
+    border-left-width: 0;
+    font-weight: 400;
+    border-bottom-style: dotted;
+    border-color: currentColor;
+}
+
+div.content h5 {
+    font-weight: 700;
+    font-size: 90%;
+}
+
+/* Táblák */
+
+div.content table {
+    width: calc(100% - 24px);
+    box-sizting: border-box;
+    margin: 12px;
+    border: 1px dashed rgba(0,0,0,.1)
+}
+
+div.content table thead th {
+    padding: 3px;
+    background-color: rgba(0,0,0,0.02);
+    border-bottom: 1px solid rgba(0,0,0,.05)
+}
+
+div.content table tbody td {
+    padding: 3px;
+    font-size: 90%;
+    user-select: text;
+    border-right: 1px solid rgba(0,0,0,.05);
+    border-bottom: 1px solid rgba(0,0,0,.05);
+}
+
+div.content table tbody td:last-child {
+    border-right: 0
+}
+
+div.content table tbody tr:last-child td {
+    border-bottom: 0
+}
+
+div.content ul {
+    font-size: 90%;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+}
+
+div.content ul ul {
+    font-size: 90%;
+    display: grid;
+    padding: 6px;
+    grid-template-columns: 1fr 1fr 1fr
+}
+
+div.content div.toc li {
+    font-weight: 700;
+    padding: 6px;
+
+}
+
+div.content div.toc li li {
+    font-weight: 400;
+    padding: 6px
+}
