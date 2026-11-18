@@ -79,7 +79,7 @@ Modify technology base cost (food, wood, gold or stone if set)
 
 ##### rsTechModifyTime(int playerId, int techId, string operation, float value)<a name="techtime"></a>
 
-Modify technology base cost (food, wood, gold or stone if set)
+Modify technology research time
 
 **Parameters:**
 | Type | Name | Description | Default value | Required |
