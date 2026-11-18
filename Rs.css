@@ -171,7 +171,7 @@ div.content pre {
     margin: 0 6px 6px 6px;
     box-sizing: border-box;
     border-radius: 12px;
-    corder-shape: squircle;
+    corner-shape: squircle;
     border: 1px solid rgba(0,0,0,.25);
     background-color: rgba(255,255,255,.75)
 }
