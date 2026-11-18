@@ -68,7 +68,7 @@ Add a technology to the inspector for a specific player.
 
 ##### rsTechnologyInspectAddAll(int techId, int params)<a name="techinspaddall"></a>
 
-Add a technology to the inspector for all palyers.
+Add a technology to the inspector for all players.
 
 **Parameters:**
 | Type | Name | Description | Default value | Required |
@@ -92,7 +92,7 @@ Remove a technology to the inspector for a specific player.
 
 ##### rsTechnologyInspectRemoveAll(int techId)<a name="techinsprmall"></a>
 
-Remove a technology to the inspector for all palyers.
+Remove a technology to the inspector for all players.
 
 **Parameters:**
 | Type | Name | Description | Default value | Required |
