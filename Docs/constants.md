@@ -54,6 +54,7 @@ In addition to the built-in constants, the library provides its own constants an
 | UNITLINE\_ELEPHANT\_ARCHER | int: array[int] |
 | UNITLINE\_MOUNTED\_CROSSBOWMAN | int: array[int] |
 | UNITLINE\_GENITOUR | int: array[int] |
+| UNITLINE\_MOUNTED\_CROSSBOWMAN | int: array[int] |
 
 \[ [Top](#top) \]
 
