@@ -1,0 +1,321 @@
+//
+//  Validation and config
+//
+extern const int RS_MAX_TECHNOLOGY_ID = 1509;
+extern const int RS_MAX_UNIT_ID = 2749;
+extern const int NULL = -9999999;
+extern int RS_EVENT_DELAY = 200; // For event loops
+extern bool RS_SHOW_ERROR_LOG = false; // For developers only
+extern bool RS_INTERACTIVITY = true; // Live Events
+extern bool RS_REMOVE_TECH_IF_DONE = false;
+extern int TECH_PLACEHOLDER_TECHNOLOGIES = -1;  // Placeholder Technologies ID
+extern int TECH_BLANK_TECHNOLOGIES = -1;  // Blank Technologies ID
+
+extern int UNITLINE_ARCHER = -1;
+extern int UNITLINE_SKIRMISHER = -1;
+extern int UNITLINE_CAVALRY_ARCHER = -1;
+extern int UNITLINE_ELEPHANT_ARCHER = -1;
+extern int UNITLINE_MOUNTED_CROSSBOWMAN = -1;
+extern int UNITLINE_GENITOUR = -1;
+
+extern int UNITLINE_MILITIA = -1;
+extern int UNITLINE_CHAMPI_SCOUT = -1;
+extern int UNITLINE_SPEARMAN = -1;
+extern int UNITLINE_EAGLE_WARRIOR = -1;
+extern int UNITLINE_FIRE_LANCER = -1;
+extern int UNITLINE_VARANGIAN_GUARD = -1;
+
+extern int UNITLINE_SCOUT_CAVALRY = -1;
+extern int UNITLINE_KNIGHT = -1;
+extern int UNITLINE_HEI_GUANG_CAVALRY = -1;
+extern int UNITLINE_CAMEL_SCOUT = -1;
+extern int UNITLINE_STEPPE_LANCER = -1;
+extern int UNITLINE_BATTLE_ELEPHANT = -1;
+
+extern int UNITLINE_BATTERING_RAM = -1;
+extern int UNITLINE_ARMORED_ELEPHANT = -1;
+extern int UNITLINE_MANGONEL = -1;
+extern int UNITLINE_ROCKET_CART = -1;
+extern int UNITLINE_SCORPION = -1;
+
+extern int UNITLINE_FIRE_GALLEY = -1;
+extern int UNITLINE_DEMOLITION_RAFT = -1;
+extern int UNITLINE_GALLEY = -1;
+extern int UNITLINE_HULK = -1;
+extern int UNITLINE_CANNON_GALLEON = -1;
+extern int UNITLINE_LONGSHIP = -1;
+
+// Unique Unit Lines
+extern int UNITLINE_COMPOSITE_BOWMAN = -1;
+extern int UNITLINE_JAGUAR_WARRIOR = -1;
+extern int UNITLINE_RATHA = -1;
+extern int UNITLINE_RATHA_MELEE = -1;
+extern int UNITLINE_RATHA_RANGED = -1;
+extern int UNITLINE_CAMEL_ARCHER = -1;
+extern int UNITLINE_HUSSITE_WAGON = -1;
+extern int UNITLINE_LONGBOWMAN = -1;
+extern int UNITLINE_KONNIK = -1;
+extern int UNITLINE_KONNIK_MOUNTED = -1;
+extern int UNITLINE_KREPOST_KONNIK_MOUNTED = -1;
+extern int UNITLINE_KONNIK_INFANTRY = -1;
+extern int UNITLINE_COUSTILLIER = -1;
+extern int UNITLINE_ARAMBAI = -1;
+extern int UNITLINE_CATAPHRACT = -1;
+extern int UNITLINE_WOAD_RAIDER = -1;
+extern int UNITLINE_CHU_KO_NU = -1;
+extern int UNITLINE_KIPCHAK = -1;
+extern int UNITLINE_JOMSVIKING = -1;
+extern int UNITLINE_URUMI_SWORDSMAN = -1;
+extern int UNITLINE_SHOTEL_WARRIOR = -1;
+extern int UNITLINE_THROWING_AXEMAN = -1;
+extern int UNITLINE_MONASPA = -1;
+extern int UNITLINE_HUSKARL = -1;
+extern int UNITLINE_CASTLE_HUSKARL = -1;
+extern int UNITLINE_BARRACKS_HUSKARL = -1;
+extern int UNITLINE_CHAKRAM_THROWER = -1;
+extern int UNITLINE_SHRIVAMSHA_RIDER = -1;
+extern int UNITLINE_GHULAM = -1;
+extern int UNITLINE_TARKAN = -1;
+extern int UNITLINE_STABLE_TARKAN = -1;
+extern int UNITLINE_CASTLE_TARKAN = -1;
+extern int UNITLINE_KAMAYUK = -1;
+extern int UNITLINE_GENOESE_CROSSBOWMAN = -1;
+extern int UNITLINE_SAMURAI = -1;
+extern int UNITLINE_IRON_PAGODA = -1;
+extern int UNITLINE_LIAO_DAO = -1;
+extern int UNITLINE_BALLISTA_ELEPHANT = -1;
+extern int UNITLINE_WAR_WAGON = -1;
+extern int UNITLINE_TURTLE_SHIP = -1;
+extern int UNITLINE_LEITIS = -1;
+extern int UNITLINE_MAGYAR_HUSZAR = -1;
+extern int UNITLINE_KARAMBIT_WARRIOR = -1;
+extern int UNITLINE_GBETO = -1;
+extern int UNITLINE_KONA = -1;
+extern int UNITLINE_BOLAS_RIDER = -1;
+extern int UNITLINE_PLUMED_ARCHER = -1;
+extern int UNITLINE_MANGUDAI = -1;
+extern int UNITLINE_GUECHA_WARRIOR = -1;
+extern int UNITLINE_TEMPLE_GUARD = -1;
+extern int UNITLINE_WAR_ELEPHANT = -1;
+extern int UNITLINE_OBUCH = -1;
+extern int UNITLINE_ORGAN_GUN = -1;
+extern int UNITLINE_CARAVEL = -1;
+extern int UNITLINE_CENTURION = -1;
+extern int UNITLINE_MAMELUKE = -1;
+extern int UNITLINE_HEARTH_TROOP = -1;
+extern int UNITLINE_WHITE_FEATHER_GUARD = -1;
+extern int UNITLINE_SERJEANT = -1;
+extern int UNITLINE_CASTLE_SERJEANT = -1;
+extern int UNITLINE_DONJON_SERJEANT = -1;
+extern int UNITLINE_BOYAR = -1;
+extern int UNITLINE_CONQUISTADOR = -1;
+extern int UNITLINE_KESHIK = -1;
+extern int UNITLINE_TEUTONIC_KNIGHT = -1;
+extern int UNITLINE_BLACKWOOD_ARCHER = -1;
+extern int UNITLINE_JANISSARY = -1;
+extern int UNITLINE_JARL = -1;
+extern int UNITLINE_RATTAN_ARCHER = -1;
+extern int UNITLINE_BERSERK = -1;
+extern int UNITLINE_TIGER_CAVALRY = -1;
+extern int UNITLINE_FIRE_ARCHER = -1;
+
+// Technology and Upgrade lines
+extern int UPGRADE_MILITIA_LINE = -1;
+extern int UPGRADE_MAN_AT_ARMS = 222;
+extern int UPGRADE_LONG_SWORDSMAN = 207;
+extern int UPGRADE_TWO_HANDED_SWORDSMAN = 1173;
+extern int UPGRADE_CHAMPION = 1174;
+extern int UPGRADE_LEGIONARY = 885;
+
+extern int UPGRADE_CHAMPI_SCOUT_LINE = -1;
+extern int UPGRADE_CHAMPI_RUNNER = 1402;
+extern int UPGRADE_CHAMPI_WARRIOR = 1351;
+extern int UPGRADE_ELITE_CHAMPI_WARRIOR = 1352;
+
+extern int UPGRADE_SPEARMAN_LINE = -1;
+extern int UPGRADE_PIKEMAN = 197;
+extern int UPGRADE_HALBERDIER = 429;
+
+extern int UPGRADE_EAGLE_SCOUT_LINE = -1;
+extern int UPGRADE_EAGLE_WARRIOR = 384;
+extern int UPGRADE_ELITE_EAGLE_WARRIOR = 434;
+
+extern int UPGRADE_ELITE_FIRE_LANCER = 982;
+extern int UPGRADE_ELITE_VARANGIAN_GUARD = 1454;
+extern int UPGRADE_ELITE_TEMPLE_GUARD = 1401;
+extern int UPGRADE_ELITE_IBIRAPEMA_WARRIOR = 1391;
+
+extern int TECH_ARSON = 602;
+extern int TECH_GAMBESONS = 875;
+extern int TECH_SQUIRES = 215;
+
+extern int UPGRADE_SCOUT_CAVALRY_LINE = -1;
+extern int UPGRADE_LIGHT_CAVALRY = 254;
+extern int UPGRADE_HUSSAR = 428;
+extern int UPGRADE_WINGED_HUSSAR = 786;
+
+extern int UPGRADE_KNIGHT_LINE = -1;
+extern int UPGRADE_CAVALIER = 209;
+extern int UPGRADE_PALADIN = 265;
+extern int UPGRADE_SAVAR = 526;
+
+extern int UPGRADE_CAMEL_SCOUT_LINE = -1;
+extern int UPGRADE_HEAVY_CAMEL_RIDER = 236;
+extern int UPGRADE_IMERIAL_CAMEL_RIDER = 521;
+
+extern int UPGRADE_HEAVY_HEI_GUANG_CAVALRY = 1033;
+extern int UPGRADE_ELITE_SHRIVAMSHA_RIDER = 843;
+extern int UPGRADE_ELITE_BATTLE_ELEPHANT = 631;
+extern int UPGRADE_ELITE_STEPPE_LANCER = 715;
+
+extern int TECH_BLOODLINES = 435;
+extern int TECH_HUSBANDRY = 39;
+
+extern int UPGRADE_ARCHER_LINE = -1;
+extern int UPGRADE_CROSSBOWMAN = 100;
+extern int UPGRADE_ARBALESTER = 237;
+
+extern int UPGRADE_SKIRMISHER_LINE = -1;
+extern int UPGRADE_ELITE_SKIRMISHER = 98;
+extern int UPGRADE_IMPERIAL_SKIRMISHER = 655;
+extern int UPGRADAE_HEAVY_CAVALRY_ARCHER = 218;
+extern int UPGRADE_ELITE_ELEPHANT_ARCHER = 481;
+extern int UPGRADE_HEAVY_MOUNTED_CROSSBOWMAN = 1451;
+extern int UPGRADE_ELITE_GENITOUR = 599;
+
+extern int TECH_THUMB_RING = 437;
+extern int TECH_PARTHIAN_TACTICS = 436;
+extern int TECH_CRANEQUINS = 1452;
+
+extern int UPGRADE_BATTERING_RAM_LINE = -1;
+extern int UPGRADE_CAPPED_RAM = 96;
+extern int UPGRADE_SIEGE_RAM = 255;
+
+extern int UPGRADE_MANGONEL_LINE = -1;
+extern int UPGRADE_ONAGER = 257;
+extern int UPGRADE_SIEGE_ONAGER = 320;
+
+extern int UPGRADE_HEAVY_ROCKET_CART = 980;
+extern int UPGRADE_HEAVY_SCORPION = 239;
+extern int UPGRADE_SIEGE_ELEPHANT = 838;
+
+extern int TECH_PADDED_ARCHER_ARMOR_LINE = -1;
+extern int TECH_PADDED_ARCHER_ARMOR = 211;
+extern int TECH_LEATHER_ARCHER_ARMOR = 212;
+extern int TECH_RING_ARCHER_ARMOR = 219;
+
+extern int TECH_FLETCHING_LINE = -1;
+extern int TECH_FLETCHING = 199;
+extern int TECH_BODKIN_ARROW = 200;
+extern int TECH_BRACER = 201;
+
+extern int TECH_FORGING_LINE = -1;
+extern int TECH_FORGING = 67;
+extern int TECH_IRON_CASTING = 68;
+extern int TECH_BLAST_FURNACE = 75;
+
+extern int TECH_SCALE_MAIL_ARMOR_LINE = -1;
+extern int TECH_SCALE_MAIL_ARMOR = 74;
+extern int TECH_CHAIN_MAIL_ARMOR = 76;
+extern int TECH_PLATE_MAIL_ARMOR = 77;
+
+extern int TECH_SCALE_BARDING_ARMOR_LINE = -1;
+extern int TECH_SCALE_BARDING_ARMOR = 81;
+extern int TECH_CHAIN_BARDING_ARMOR = 82;
+extern int TECH_PLATE_BARDING_ARMOR = 80;
+
+extern int TECH_FISHING_LINES_LINE = -1;
+extern int TECH_FISHING_LINES = 906;
+extern int TECH_GILLNETS = 65;
+
+extern int UPGRADE_DEMOLITION_RAFT_LINE = -1;
+extern int UPGRADE_DEMOLITION_SHIP = 905;
+extern int UPGRADE_HEAVY_DEMOLITION_SHIP = 244;
+
+extern int UPGRADE_WARSHIP_LINE = -1;
+extern int UPGRADE_MEDIUM_WARSHIP = 34;
+extern int UPGRADE_HEAVY_WARSHIP = 35;
+
+extern int UPGRADE_ELITE_CANNON_GALLEON = 376;
+extern int UPGRADE_ELITE_LONGSHIP = 372;
+extern int UPGRADE_ELITE_TURTLE_SHIP = 448;
+extern int UPGRADE_ELITE_CARAVEL = 597;
+
+extern int TECH_MASONRY_LINE = -1;
+extern int TECH_MASONRY = 50;
+extern int TECH_ARCHITECTURE = 51;
+extern int UPGRADE_FORTIFIED_WALL = 194;
+extern int TECH_CHEMISTRY = 47;
+extern int TECH_BALLISTICS = 93;
+extern int TECH_SIEGE_ENGINEERS = 377;
+extern int UPGRADE_WATCH_TOWER_LINE = -1;
+extern int UPGRADE_GUARD_TOWER = 140;
+extern int UPGRADE_KEEP = 63;
+extern int TECH_HEATED_SHOT = 380;
+extern int TECH_ARROWSLITS = 608;
+extern int TEXH_MURDER_HOLES = 322;
+extern int TECH_CAREENING_LINE = -1;
+extern int TECH_CAREENING = 374;
+extern int TECH_DRY_DOCK = 375;
+extern int TECH_CLINKER_CONSTRUCTION_LINE = -1;
+extern int TECH_CLINKER_CONSTRUCTION = 908;
+extern int TECH_CARVEL_HULL = 907;
+extern int TECH_SIPHONS_LINE = -1;
+extern int TECH_SIPHONS = 909;
+extern int TECH_INCENDIARIES = 910;
+extern int TECH_SHIPWRIGHT = 373;
+extern int TECH_TREADMILL_CRANE = 54;
+
+extern int TECH_HOARDINGS = 379;
+extern int TECH_SAPPERS = 321;
+extern int TECH_CONSCRIPTION = 315;
+
+extern int TECH_DEVOTION_LINE = -1;
+extern int TECH_DEVOTION = 46;
+extern int TECH_FAITH = 45;
+extern int TECH_REDEMPTION = 316;
+extern int TECH_ILLUMINATION = 233;
+extern int TECH_ATONEMENT = 319;
+extern int TECH_BLOCK_PRINTING = 230;
+extern int TECH_HERBAL_MEDICINE = 441;
+extern int TECH_THEOCRACY = 438;
+extern int TECH_HERESY = 439;
+extern int TECH_SANCTITY = 231;
+extern int TECH_FERVOR = 252;
+
+extern int TECH_LOOM = 22;
+extern int TECH_TOWN_WATCH_LINE = -1;
+extern int TECH_TOWN_WATCH = 8;
+extern int TECH_TOWN_PATROL = 280;
+extern int TECH_WHEELBARROW_LINE = -1;
+extern int TECH_WHEELBARROW = 213;
+extern int TECH_HAND_CART = 249;
+
+extern int TECH_GOLD_MINING_LINE = -1;
+extern int TECH_GOLD_MINING = 55;
+extern int TECH_GOLD_SHAFT_MINING = 182;
+
+extern int TECH_STONE_MINING_LINE = -1;
+extern int TECH_STONE_MINING = 278;
+extern int TECH_STONE_SHAFT_MINING = 279;
+
+extern int TECH_DOUBLE_BIT_AXE_LINE = -1;
+extern int TECH_DOUBLE_BIT_AXE = 202;
+extern int TECH_BOW_SAW = 203;
+extern int TECH_TWO_MAN_SAW = 221;
+
+extern int TECH_COINAGE_LINE = -1;
+extern int TECH_COINAGE = 23;
+extern int TECH_BANKING = 17;
+extern int TECH_GUILDS = 15;
+extern int TECH_CARAVAN = 48;
+
+extern int TECH_HORSE_COLLAR_LINE = -1;
+extern int TECH_HORSE_COLLAR = 14;
+extern int TECH_HEAVY_PLOW = 13;
+extern int TECH_CROP_ROTATION = 12;
+
+extern int TECH_DOMESTICATION_LINE = -1;
+extern int TECH_DOMESTICATION = 1014;
+extern int TECH_PASTORALISM = 1013;
+extern int TECH_TRANSHUMANCE = 1012;
